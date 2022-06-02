@@ -1,0 +1,67 @@
+/* pages and rabbit holes */
+:root {
+   --background: #000000;
+   --text: #f5f5f5;
+   --offwhite: #f1f1f1;
+   --offblack: #1B1B1B;
+         }
+/* body */
+body {
+  background-color: var(--background);
+  font-family: "Gill Sans", sans-serif;
+}
+/* navigation */
+.navigation {
+}
+/* block */
+.block {
+  width: 100%;
+  padding: 5%;
+}
+/* pages */
+.page {
+  color: var(--text);
+}
+.column100 {
+  padding: 2.5%;
+  width: 90%;
+}
+.column50 {
+  padding: 2.5%;
+  width: 45%;
+}
+.column30 {
+  padding: 2.5%;
+  width: 25%;
+}
+.center {
+  text-align: center;
+}
+.arrows {
+  background-color: var(--offwhite);
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  font-size: 3em;
+  text-decoration: none;
+  vertical-align: middle;
+  padding: 1% 4%;
+}
+.arrows a:link {
+  color: var(--offblack) !important;
+}
+
+/* text */
+.page h1 {
+  font-size: 3em;
+}
+.page h2 {
+  font-size: 2.3em;
+}
+.page p {
+  font-size: 1.7em;
+}
+/* links */
+.page a:link {
+
+}
