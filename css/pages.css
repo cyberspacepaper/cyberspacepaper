@@ -65,7 +65,6 @@ h1.firstpage {
 .page h1 {
   font-size: 3em;
   margin-top: 15%;
-  text-align: left;
 }
 .page h2 {
   font-size: 2.3em;
@@ -86,13 +85,15 @@ p.comment {
 
 /* links */
 .button {
-  background-color: var(--black);
-  border: 2px solid var(--offwhite);
-  box-shadow: 5px 5px var(--offblack);
-  -moz-box-shadow: 5px 5px var(--offblack);
-  -webkit-box-shadow: 5px 5px var(--offblack);
-  overflow: auto;
+  background-color: none;
   padding: 2% 1%;
+}
+
+a.pagenumbers {
+  color: var(--offwhite);
+  font-size: 1.5em;
+  text-decoration: none;
+  cursor: default;
 }
 
 a.button  {
@@ -102,9 +103,7 @@ a.button  {
 }
 
 a:hover.button {
-  background-color: var(--orange);
-  border: 5px solid var(--white);
-  color: var(--offblack);
+  color: var(--orange);
 }
 
 .page a:link {
