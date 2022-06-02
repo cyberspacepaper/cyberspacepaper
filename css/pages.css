@@ -51,9 +51,16 @@ a:hover.navigation {
 }
 .center {
   text-align: center;
-  margin-top: 10%;
+}
+.image {
+  text-align: center;
+  width: 50%;
 }
 
+.pagination {
+  text-align: center;
+  margin-top: 10%;
+}
 
 
 
@@ -112,4 +119,18 @@ a:hover.button {
 
 p.date {
   font-size: 1.1em;
+}
+.footer-links p, .footer-links a:link {
+  color: var(--grey);
+  font-size: 1em;
+  margin-top: 10%;
+  text-align: center;
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .image {
+    text-align: center;
+    width: 90%;
+  }
 }
