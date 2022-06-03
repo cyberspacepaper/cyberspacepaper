@@ -1,7 +1,7 @@
 /* pages and rabbit holes */
 :root {
    --space: #010837;
-   --text: #65d1d1;
+   --text: #65bed1;
    --white: #ffffff;
    --offwhite: #f1f1f1;
    --grey: #ccc;
@@ -31,6 +31,7 @@ a:hover.navigation {
 /* block */
 .block {
   width: 100%;
+  padding-bottom: 5%;
 }
 /* pages */
 .page {
@@ -59,7 +60,7 @@ a:hover.navigation {
 
 .pagination {
   text-align: center;
-  margin-top: 10%;
+  margin-top: 25%;
 }
 
 
@@ -94,10 +95,11 @@ p.comment {
 .button {
   background-color: none;
   padding: 2% 1%;
+  margin: 2% 2%;
 }
 
 a.pagenumbers {
-  color: var(--offwhite);
+  color: var(--text);
   font-size: 1.5em;
   text-decoration: none;
   cursor: default;
@@ -105,12 +107,16 @@ a.pagenumbers {
 
 a.button  {
   color: var(--offwhite);
-  font-size: 1.5em;
+  font-size: 1.8em;
+  padding: 2% 5%;
   text-decoration: none;
 }
 
 a:hover.button {
+  border: 1px solid var(--teal);
   color: var(--orange);
+
+
 }
 
 .page a:link {
