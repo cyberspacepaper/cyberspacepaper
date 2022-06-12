@@ -1,5 +1,7 @@
 /* pages and rabbit holes */
 :root {
+   --computer: #dbdfe2;
+   --computer-shadow: #aaabaf;
    --space: #010837;
    --text: #65ffff;
    --white: #ffffff;
@@ -12,8 +14,9 @@
          }
 /* body */
 body {
-  background-color: var(--space);
+  background-color: var(--computer);
   font-family: "Gill Sans", sans-serif;
+  padding: 5%;
 }
 /* navigation */
 .navigation {
@@ -30,17 +33,27 @@ a:hover.navigation {
 
 /* block */
 .block {
-  width: 100%;
-  padding-bottom: 5%;
+  background-color: var(--computer-shadow);
+  border-radius: 2%;
+  -webkit-border-radius: 2%;
+  -moz-border-radius: 2%;
+  width: 98%;
+  padding: 1%;
 }
 /* pages */
 .page {
+  background-color: var(--space);
+  border-radius: 1%;
+  -webkit-border-radius: 1%;
+  -moz-border-radius: 1%;
   color: var(--text);
-  width: 80%;
+  min-height: 1000px;
+  padding: 1%;
+  width: 98%;
 }
 .column100 {
-  padding: 5% 25% 5% 25%;
-  width: 80%;
+  padding: 1% 5%;
+  width: 90%;
 }
 .column50 {
   padding: 2.5%;
@@ -121,6 +134,26 @@ a:hover.button {
 
 .page a:link {
 
+}
+
+.question a:link {
+  color: var(--text);
+  font-family: monospace;
+  font-size: 1.5em;
+}
+
+.question a:hover {
+  color: var(--orange);
+}
+
+.link-pending {
+  text-decoration: none !important;
+  line-height: 250%;
+}
+
+a:hover.link-pending {
+  color: var(--text);
+  cursor: default;
 }
 
 p.date {
