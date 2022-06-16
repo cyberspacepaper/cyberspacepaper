@@ -40,6 +40,15 @@ a:hover.navigation {
   width: 98%;
   padding: 1%;
 }
+/* block */
+.computer {
+  background-color: var(--computer);
+  border-radius: 2%;
+  -webkit-border-radius: 2%;
+  -moz-border-radius: 2%;
+  width: 98%;
+  padding: 1%;
+}
 /* pages */
 .page {
   background-color: var(--space);
@@ -47,8 +56,9 @@ a:hover.navigation {
   -webkit-border-radius: 1%;
   -moz-border-radius: 1%;
   color: var(--text);
-  min-height: 1000px;
-  padding: 1%;
+  min-height: 650px;
+  padding: 1% 1% 5% 1%;
+  position: relative;
   width: 98%;
 }
 .column100 {
@@ -66,16 +76,37 @@ a:hover.navigation {
 .center {
   text-align: center;
 }
+.computer-buttons {
+  margin-bottom: 15%;
+  padding-top: 5%;
+  text-align: right;
+}
 .image {
   text-align: center;
   width: 50%;
 }
 
+/* pagination */
 .pagination {
-  text-align: center;
-  margin-top: 25%;
+  color: var(--text);
+  margin-top: 15%;
+  padding: 1% 1% 5% 1%;
+  width: 98%;
 }
 
+.page-numbers {
+  text-align: center;
+  bottom: 0;
+}
+
+
+p.page-number {
+  color: var(--grey);
+  font-family: sans-serif;
+  font-size: 1.1em !important;
+  text-align: center;
+  padding-bottom: 5%;
+}
 
 
 /* text */
@@ -105,31 +136,105 @@ p.comment {
 }
 
 /* links */
+
+a:link {
+  color: var(--teal);
+}
+
+a:hover {
+  color: var(--orange);
+}
+
+a:visited {
+  color: var(--grey);
+}
+
+.button-forward {
+  background-color: var(--orange);
+  border: 2px solid var(--teal);
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  padding: 2% 3%;
+  margin: 5%;
+}
+
+a.button-forward  {
+  color: var(--black);
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+a:hover.button-forward {
+  border: 2px solid var(--offwhite);
+  color: var(--offwhite);
+
+}
+
+.button-back {
+  background-color: none;
+  border: 2px solid var(--teal);
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  padding: 2% 3%;
+  margin: 5%;
+}
+
+a.button-back {
+  color: var(--teal);
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+a:hover.button-back {
+  border: 2px solid var(--offwhite);
+  color: var(--offwhite);
+
+}
+
+
 .button {
   background-color: none;
   padding: 2% 1%;
   margin: 2% 2%;
+  line-height: 5;
+  text-decoration: underline;
 }
 
-a.pagenumbers {
+a.button  {
+  color: var(--teal);
+  font-size: 1.3em;
+  padding: 2% 5%;
+}
+
+a:hover.button {
+  color: var(--offwhite);
+}
+
+a.page-number {
   color: var(--text);
   font-size: 1.5em;
   text-decoration: none;
   cursor: default;
 }
 
-a.button  {
-  color: var(--offwhite);
-  font-size: 1.8em;
-  padding: 2% 5%;
+.computer-button {
+  margin: 3% 1%;
+  padding: 2% 3%;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+}
+
+a.computer-button {
+  border: 2px solid var(--computer-shadow);
+  color: var(--black);
   text-decoration: none;
 }
 
-a:hover.button {
-  border: 1px solid var(--teal);
-  color: var(--orange);
-
-
+a:hover.computer-button {
+  border: 2px solid var(--grey);
 }
 
 .page a:link {
@@ -160,7 +265,7 @@ p.date {
   font-size: 1.1em;
 }
 .footer-links p, .footer-links a:link {
-  color: var(--grey);
+  color: var(--black);
   font-size: 1em;
   margin-top: 10%;
   text-align: center;
